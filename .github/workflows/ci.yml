@@ -52,4 +52,4 @@ jobs:
 
       - name: Afficher les logs en cas d'échec
         if: failure()
-        run: docker logs python-cicd-lab
+        run: docker logs python-cicd-lab || true
