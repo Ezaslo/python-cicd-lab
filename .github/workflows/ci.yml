@@ -30,7 +30,7 @@ jobs:
         run: docker build -t python-cicd-lab:${{ github.sha }} .
 
       - name: Scanner l'image Docker
-        uses: aquasecurity/trivy-action@0.33.1
+        uses: aquasecurity/trivy-action@v0.35.0
         with:
           image-ref: python-cicd-lab:${{ github.sha }}
           format: table
